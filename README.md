@@ -1,7 +1,3 @@
-# How To
-
-Below is documentation of several useful procedures.
-
 # Automatically Refresh Website Via Console To Keep Session Alive
 
 These instructions are for using the Web Console to automatically refresh a window to keep an authenticated session alive.
