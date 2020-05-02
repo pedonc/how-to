@@ -28,7 +28,7 @@ These instructions are for using the Web Console to automatically refresh a wind
 22. The commands entered in the Web Console at the bottom of the left-most New Tab will refresh the designated refresh browser window or tab every two minutes.  Leave the left-most New Tab and the designated refresh browser window or tab open and do not interact with them to keep the session alive.  Continue working in the main tab for your session and/or in new browser windows or tabs.
 23. When you want to end your session, close the left-most New Tab and close the designated refresh browser window or tab, then sign out of the site in your main tab.
 
-# [chrome notifications](#stop-notifications-in-google-chrome)Clear Settings In Google Chrome Browser To Stop Unwanted Notifications And Pages From Loading
+# [ ](#stop-notifications-in-google-chrome)Clear Settings In Google Chrome Browser To Stop Unwanted Notifications And Pages From Loading
 
 ## Chrome On macOS
 
