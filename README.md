@@ -302,7 +302,7 @@ The useful NanoDrop 1000 device is not officially supported on any modern operat
 9.   Unplug the USB cable and power cable from the NanoDrop 1000.
 10.  Restart the computer.
 11.  Plug the power supply into the NanoDrop 1000.
-12.  Plug the USB cable into the NanoDrop 1000.
+12.  Plug the USB cable into the NanoDrop 1000.  The NanoDrop 1000 should now operate with the software on the computer.
 13.  Importantly, the above solution is not thoroughly tested.  Please test this solution extensively and verify your data.
 
 # License
