@@ -275,7 +275,7 @@ The useful NanoDrop 1000 device is not officially supported on any modern operat
 ## Part 2 - Extract The NanoDrop Sofware
 
 1.   Download and install 7-Zip from <https://www.7-zip.org>.  Use 7-Zip (via the right-click context menu) to open and extract files from installers.
-2.   Download the NanoDrop 1000 software (version 3.8.1) from the [ThermoFisher Scientific website]<https://www.thermofisher.com/us/en/home/industrial/spectroscopy-elemental-isotope-analysis/molecular-spectroscopy/ultraviolet-visible-visible-spectrophotometry-uv-vis-vis/uv-vis-vis-instruments/nanodrop-microvolume-spectrophotometers/nanodrop-product-authentication.html>.
+2.   Download the NanoDrop 1000 software (version 3.8.1) from the [ThermoFisher Scientific website](https://www.thermofisher.com/us/en/home/industrial/spectroscopy-elemental-isotope-analysis/molecular-spectroscopy/ultraviolet-visible-visible-spectrophotometry-uv-vis-vis/uv-vis-vis-instruments/nanodrop-microvolume-spectrophotometers/nanodrop-product-authentication.html).
 3.   The NanoDrop 1000 software is from 2011 and is not compatible with modern operating systems.  To work around the limitations, the installer cannot be run directly.
 4.   Extract the ND1000_3.8.1.exe file from the ND1000-3.8.1.zip download file (Windows' built-in Zip file parser or 7-Zip can be used).
 5.   Use 7-Zip to extract all files in the ND1000_3.8.1.exe file to a folder.
@@ -286,7 +286,7 @@ The useful NanoDrop 1000 device is not officially supported on any modern operat
 
 1.   From the extracted NanoDrop software folder, open the **ND1000** folder (please open the nested child folder if there are both a parent and child directory with the same name).
 2.   As an administrator, install all the MSI files and run all the EXE installers in subdirectories of the folder to install LVRuntime7 (**lvruntimeeng71.msi**), NI-VISA 4.4.1 (**setup.exe**), and the NanoDrop software (**NanoDrop 1000 V3.8.1.msi**).
-3.   Please note that this step may not be necessary.  Download and install the latest [NI-Visa software]<https://www.ni.com/en-us/support/downloads/drivers/download.ni-visa.html> (currently version 20).  Install the default options/packages and disable updates.
+3.   Please note that this step may not be necessary.  Download and install the latest [NI-Visa software](https://www.ni.com/en-us/support/downloads/drivers/download.ni-visa.html) (currently version 20).  Install the default options/packages and disable updates.
 4.   Restart the computer.
 
 ## Part 4 - Connect The NanoDrop 1000
