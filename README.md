@@ -286,7 +286,7 @@ The useful NanoDrop 1000 device is not officially supported on any modern operat
 
 1.   From the extracted NanoDrop software folder, open the **ND1000** folder (please open the nested child folder if there are both a parent and child directory with the same name).
 2.   As an administrator, install all the MSI files and run all the EXE installers in subdirectories of the folder to install LVRuntime7 (**lvruntimeeng71.msi**), NI-VISA 4.4.1 (**setup.exe**), and the NanoDrop software (**NanoDrop 1000 V3.8.1.msi**).
-3.   Please note that this step may not be necessary.  Download and install the latest [NI-Visa software](https://www.ni.com/en-us/support/downloads/drivers/download.ni-visa.html) (currently version 20).  Install the default options/packages and disable updates.
+3.   Please note that this step may not be necessary.  Download and install the latest [NI-Visa software](https://www.ni.com/en-us/support/downloads/drivers/download.ni-visa.html) (currently version 20).  Install the default options/packages, apply the default option to slow the Windows boot to enable drivers to load, and disable updates.
 4.   Restart the computer.
 
 ## Part 4 - Connect The NanoDrop 1000
