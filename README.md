@@ -255,7 +255,7 @@ Now that macOS is up-to-date, please re-enable Spotlight:
 
 The Spotlight service will re-index your computer's disk.  This can take a while.
 
-# Operate A NanoDrop 1000 Spectophotometer From A Windows 10 64-Bit Computer
+# Operate A NanoDrop 1000 Spectrophotometer From A Windows 10 64-Bit Computer
 
 The useful NanoDrop 1000 device is not officially supported on any modern operating system.  The latest support software is from 2011 and was designed for Windows XP, Vista, and 7.  With this process, it may be possible to run the instrument on a modern Windows 10 64-bit computer.  Please note that this process is not thoroughly tested, so please verify any data generated this way.
 
