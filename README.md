@@ -255,6 +255,56 @@ Now that macOS is up-to-date, please re-enable Spotlight:
 
 The Spotlight service will re-index your computer's disk.  This can take a while.
 
+# Operate A NanoDrop 1000 Spectophotometer From A Windows 10 64-Bit Computer
+
+The useful NanoDrop 1000 device is not officially supported on any modern operating system.  The latest support software is from 2011 and was designed for Windows XP, Vista, and 7.  With this process, it may be possible to run the instrument on a modern Windows 10 64-bit computer.  Please note that this process is not thoroughly tested, so please verify any data generated this way.
+
+## Part 1 - Configure Windows
+
+1.   Disconnect the NanoDrop, unplug the power cable from the NanoDrop, disconnect all unnecessary peripherals/connections from the computer, and install Windows 10 64-Bit Version 2004.
+2.   Configure the computer with an administrator account for running the NanoDrop and update software, drivers, and security settings.
+3.   Open **Settings**, **Apps & Features**, **Optional features**, scroll down and click **More Windows features**.
+4.   Enable **.NET Framework 3.5**, install the feature and reboot.
+5.   Back in Windows, go to **Settings**, **Update & Security**, **Recovery** and under Advanced Startup click **Restart now**.
+6.   The computer will reboot into Recovery Mode.  Click **Troubleshoot**.
+7.   Click **Advanced options**.
+8.   Click **Startup Settings**.
+9.   Click **Restart**.
+10.  The computer will restart to the Startup Settings screen.  Press the **7** key to **Disable driver signature enforcement**.
+
+## Part 2 - Extract The NanoDrop Sofware
+
+1.   Download and install 7-Zip from <https://www.7-zip.org>.  Use 7-Zip (via the right-click context menu) to open and extract files from installers.
+2.   Download the NanoDrop 1000 software (version 3.8.1) from the [ThermoFisher Scientific website]<https://www.thermofisher.com/us/en/home/industrial/spectroscopy-elemental-isotope-analysis/molecular-spectroscopy/ultraviolet-visible-visible-spectrophotometry-uv-vis-vis/uv-vis-vis-instruments/nanodrop-microvolume-spectrophotometers/nanodrop-product-authentication.html>.
+3.   The NanoDrop 1000 software is from 2011 and is not compatible with modern operating systems.  To work around the limitations, the installer cannot be run directly.
+4.   Extract the ND1000_3.8.1.exe file from the ND1000-3.8.1.zip download file (Windows' built-in Zip file parser or 7-Zip can be used).
+5.   Use 7-Zip to extract all files in the ND1000_3.8.1.exe file to a folder.
+6.   Browse the folder containing the extracted files and open the **64bitdriver** subdirectory containing the Windows Vista driver.
+7.   Use 7-zip to extract all files from the **Data1.cab** file to a new **64bitdriverExtracted** folder (there should be 2 files, **nd_usb2_vista.cat** and **nd_usb2_vista.inf**).
+
+## Part 3 - Install The NanoDrop Software
+
+1.   From the extracted NanoDrop software folder, open the **ND1000** folder (please open the nested child folder if there are both a parent and child directory with the same name).
+2.   As an administrator, install all the MSI files and run all the EXE installers in subdirectories of the folder to install LVRuntime7 (**lvruntimeeng71.msi**), NI-VISA 4.4.1 (**setup.exe**), and the NanoDrop software (**NanoDrop 1000 V3.8.1.msi**).
+3.   Please note that this step may not be necessary.  Download and install the latest [NI-Visa software]<https://www.ni.com/en-us/support/downloads/drivers/download.ni-visa.html> (currently version 20).  Install the default options/packages and disable updates.
+4.   Restart the computer.
+
+## Part 4 - Connect The NanoDrop 1000
+
+1.   Plug the NanoDrop 1000 into its power supply, then connect the NanoDrop via USB to the computer.
+2.   Open the **Device Manager**.
+3.   Locate the NanoDrop device (may be listed as unknown) and install the 64-bit driver from the **64bitdriverExtracted** folder created in Step 7 of Part 2.
+4.   The driver should install but will likely throw a USB BOS descriptor error.
+5.   Go to the properties of the NanoDrop in the **Device Manager**, go to **Details**, and record the information provided under the **Hardware Ids** properties.
+6.   Open the **Registry Editor** and go to `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\usbflags\` and open the key (subfolder) named with the VID, PID, and revision number of the NanoDrop noted in Part 4 Step 5.
+7.   Create a new **Binary Value** in the key named `SkipBOSDescriptorQuery`.
+8.   Set the value data for the key to `0000 01 00 00 00`.  This should avoid the device enumeration error.  Close the Registry Editor.
+9.   Unplug the USB cable and power cable from the NanoDrop 1000.
+10.  Restart the computer.
+11.  Plug the power supply into the NanoDrop 1000.
+12.  Plug the USB cable into the NanoDrop 1000.
+13.  Importantly, the above solution is not thoroughly tested.  Please test this solution extensively and verify your data.
+
 # License
 
 All content copyright (c) 2020 Curtis Glavin, Jonathan Huppi, Robert Burkey
