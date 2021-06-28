@@ -307,7 +307,7 @@ The useful NanoDrop 1000 device is not officially supported on any modern operat
 
 # License
 
-All content copyright (c) 2020 Curtis Glavin, Jonathan Huppi, Robert Burkey
+All content copyright (c) 2021 Curtis Glavin, Jonathan Huppi, Joshua Casiano
 
 All code in this repository is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3 as published by the Free Software Foundation.
 
